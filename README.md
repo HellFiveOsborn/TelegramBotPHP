@@ -1,6 +1,6 @@
-# TelegramBotPHP
-[![API](https://img.shields.io/badge/Telegram%20Bot%20API-April%2016%2C%202022-36ade1.svg)](https://core.telegram.org/bots/api)
-![PHP](https://img.shields.io/badge/php-%3E%3D5.3-8892bf.svg)
+# 🐑 TelegramBotPHP
+[![API](https://img.shields.io/badge/Telegram%20Bot%20API-February%2016%2C%202024-36ade1.svg)](https://core.telegram.org/bots/api)
+![PHP](https://img.shields.io/badge/php-%3E%3D8.0-8892bf.svg)
 ![CURL](https://img.shields.io/badge/cURL-required-green.svg)
 
 [![Total Downloads](https://poser.pugx.org/eleirbag89/telegrambotphp/downloads)](https://packagist.org/packages/eleirbag89/telegrambotphp)
@@ -8,13 +8,13 @@
 [![StyleCI](https://styleci.io/repos/38492095/shield?branch=master)](https://styleci.io/repos/38492095)
 
 A very simple PHP [Telegram Bot API](https://core.telegram.org/bots).    
-Compliant with the April 16, 2022 Telegram Bot API update.
+Compliant with the February 16, 2024 Telegram Bot API 7.2 update.
 
 Requirements
 ---------
 
-* PHP >= 5.3
-* Curl extension for PHP5 must be enabled.
+* PHP >= 8.0
+* Curl extension for PHP must be enabled.
 * Telegram API key, you can get one simply with [@BotFather](https://core.telegram.org/bots#botfather) with simple commands right after creating your bot.
 
 For the WebHook:
@@ -29,25 +29,38 @@ Download
 
 #### Using Composer
 
-From your project directory, run:
+First, you need to add the GitHub repository to your Composer.json file. This tells Composer where to find the package that is not in Packagist.
+
+Open your composer.json file and add the repositories section along with the GitHub repository:
+```json
+{
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/HellFiveOsborn/TelegramBotPHP"
+        }
+    ],
+    "require": {
+        "hellfiveosborn/telegrambotphp": "master"
+    }
+}
 ```
-composer require eleirbag89/telegrambotphp
+After configuring Composer.json, you can install the package using the following command in the terminal:
+```bash
+composer update
 ```
-or
-```
-php composer.phar require eleirbag89/telegrambotphp
-```
+
 Note: If you don't have Composer you can download it [HERE](https://getcomposer.org/download/).
 
 #### Using release archives
 
-https://github.com/Eleirbag89/TelegramBotPHP/releases
+https://github.com/HellFiveOsborn/TelegramBotPHP/releases
 
 #### Using Git
 
 From a project directory, run:
 ```
-git clone https://github.com/Eleirbag89/TelegramBotPHP.git
+git clone https://github.com/HellFiveOsborn/TelegramBotPHP.git
 ```
 
 Installation
