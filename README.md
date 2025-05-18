@@ -41,7 +41,7 @@ Open your composer.json file and add the repositories section along with the Git
         }
     ],
     "require": {
-        "hellfiveosborn/telegrambotphp": "master"
+        "eleirbag89/telegrambotphp": "dev-master"
     }
 }
 ```
